@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HK Employment Scheme</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container-xxl px-5">
+            <h1>
+                <a class="navbar-brand" href="#page-top">HK Employment Support Scheme</a>
+            </h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#Introduction">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Top ESS Recipients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#controversies">Controversies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Post-Pandemic Employment Market</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-primary text-white"
+        style="background-image: url('assets/hk_bg.jpeg'); background-size: 100% 100% ;background-repeat:no-repeat; ">
+        <div class="container px-4 text-center">
+            <h1 class="fw-bold ">Employment Support Scheme: Biggest Wage Subsidy in HK Corporate History & Post-Pandemic
+                Employment Issues </h1>
+            <p class="fw-bolder text-justify">In April 2020, the Financial Committee of the Hong Kong Legislative
+                Counsel
+                approved the Employment Support Scheme (ESS) 2020—
+                a key component of Hong Kong’s Anti-epidemic Fund 2.0 in reaction to the outbreak of Covid-19, aiming at
+                enabling HK employers to retain their employees and provide wages.
+                Over 150,000 employers benefited from the scheme and more than HK$90 billion was distributed to
+                businesses.
+                This made the ESS the largest transfer payment in HK corporate history.
+            </p>
+            <p class="fw-bolder text-justify">
+                A new round of ESS, which was expected to cost as much as an extra $HK43 billion to the government,
+                rolled
+                out in March 2022 under the Omicron Fifth Wave.
+                In addition, some new provisions were applied to the 2022 scheme after receiving some criticism that the
+                original ESS disproportionately benefited
+                conglomerates, which might not necessarily suffer any business downturn under the pandemic (eg.
+                telecommunication companies & supermarkets).
+            </p>
+
+            <p class="fw-bolder text-justify">
+                Hong Kong's Covid-hit economy will likely return to growth this year as the city opens up and China's
+                economic outlook improves.
+                However, the city is facing some employment issues including the loss of the workforce. Meanwhile,
+                certain
+                industries (eg. tourism) find it
+                difficult to fill the corresponding job vacancies amid the business recovery.
+            </p>
+
+            <a class="btn btn-secondary btn-primary" href="#Introduction">Read More</a>
+        </div>
+    </header>
+    <!-- About section-->
+    <section id="Introduction">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-left">
+                <div class="col-lg-12">
+                    <h2>Introduction</h2>
+                    <p></p>
+
+                    <p class="fw-bolder text-justify" ”>
+                        Since the global outbreak of Covid-19 in early 2020, Hong Kong has implemented various control
+                        measures including travel and business restrictions over the course of the pandemic.
+                        Many businesses have struggled with decreased demand for goods and services,
+                        and some employers were forced to reduce their staff or cut working hours.
+                        Referring to Census Department, HK's annual
+                        unemployment rate for 2020 was 5.83% (+2.9pp, YoY)
+                        which was the highest since 2003 upon the impact of SARS.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        To maintain employment during the epidemic, the HKSAR government hence launched an ESS,
+                        which will provide time-limited financial support to employers to retain their employees
+                        who will otherwise be made redundant. Similar schemes had been rolled out by other jurisdictions
+                        (e.g. Singapore, UK, Australia) to retain/support jobs.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        Generally speaking, the government covered 50% of employees' salaries up to a subsidy cap of
+                        HK$9,000 per month
+                        for 6 months from June to November 2020, divided into 2 phases each of 3 months. Each phase had
+                        to be separately claimed.
+                        Eligible employers are those who meet the following conditions:
+                    </p>
+
+
+
+                    <ol class="fw-bolder">
+                        <li>Have been making Mandatory Provident Fund
+                            (MPF) contributions or have set up Occupational Retirement Schemes (ORSO
+                            schemes) for their employees</li>
+                        <br>
+                        <li>Provide an undertaking that they will:
+                            <ul>
+                                <li>Not lay off any workers during the subsidy period</li>
+                                <li>Use the full amount of the subsidies to pay their employees’ wages</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <p class="fw-bolder text-justify">
+                        In addition, employers could not apply subsidies for employees with more than HK$30000 monthly
+                        income. The scheme also covered self-employed persons (SEPs) who have
+                        made MPF contributions in the past 15 months. Eligible SEPs would be granted a
+                        one-off lump-sum subsidy of HK$7,500.
+                    </p>
+
+                    <div class="bg-light" id="chartdiv1">
+                        <h3 class="fw-bolder text-center">2020 ESS Distribution Statistics</h3>
+
+                    </div>
+                    <p class="fw-bolder text-justify">
+                        Source: HKGov ESS website, Webb-site
+                    </p>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Services section-->
+
+    <!-- Contact section-->
+
+    <section class="bg-light" id="services">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-left">
+                <div class="col-lg-12 fw-bolder text-justify">
+                    <h2>Top 2020 ESS Recipients</h2>
+                    <p class="fw-bolder text-justify">Hong Kong’s biggest conglomerates and chains were among the top
+                        beneficiaries of the ESS.
+                        Dairy Farm Company Limited was ranked as the no.1 recipient, totalling almost HK$800 million,
+                        under the scheme. According to the filings, the group that includes the Wellcome supermarket
+                        chain,
+                        Mannings pharmacy chain, 7-Eleven convenience store franchise, and IKEA furniture franchise
+                        pledged to maintain a minimum of
+                        21,611 job positions during the subsidised periods spanning from June to August and September to
+                        November 2020.
+                    </p>
+                    <p class="fw-bolder text-justify">
+                        Kowloon Motor Bus Company (KMB), Maxim’s Caterers (a restaurant chain and group), HKT Services
+                        (the largest telecommunications company in the city),
+                        and Cafe de Coral (a fast food chain) were among the top five beneficiaries of the subsidies,
+                        according to the records. More than 55 employers received
+                        over HK$100 million.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Total Amount of Employment Support Subsidies Received by Top 10
+                        Beneficiaries</h4>
+                    <div id="chartdiv2"></div>
+                    <p>Source: HKGOV ESS Documents</p>
+                    <br>
+                    <h5 class="fw-bolder text-justify">
+                        Combined Amount Received by Top 10 Recipients: HK$4.83B
+                    </h5>
+                    <p class="fw-bolder text-justify">
+                        Among the top 10 companies, Dairy Farm Company Limited received the largest amount of
+                        subsidies ($HK799.4 million) with $HK36.9K per headcount.
+                        Cathay Pacific had the lowest subsidies per headcount ($HK25.8K) as it did not apply for the
+                        phase 2 subsidy. Instead, it chose to cut 8,500 jobs and
+                        eliminated Dragon Brand in Oct 2020. In contrast, HONG KONG AIRCRAFT ENGINEERING Company
+                        participated in both phases and had the highest subsidies per headcount(HK$54.5K).
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Comparison of Number of Headcounts Promised to Retain during Subsidized
+                        Period by Top 10 Beneficiaries</h4>
+                    <div id="chartdiv3"></div>
+                    <p>Source: HKGOV ESS Documents</p>
+                </div>
+                <br>
+                <h5 class="fw-bolder text-justify">
+                    Total Number of Jobs Retained by the Top 10 Recipients Under the Scheme: 116,891
+                </h5>
+                <p class="fw-bolder text-justify">
+                    The number of headcounts to be retained by the top 10 companies during the subsidized period ranged
+                    from 6,066(GAMMON CONSTRUCTION)
+                    to 21,611(Dairy Farm Company Limited). These 10 firms bagged about 5% of the total subsidies and
+                    committed to around 6% of the total headcounts.
+                </p>
+                <h5 class="fw-bolder text-justify">
+                    Sector breakdown of the Top 10 Recipients:
+                </h5>
+                <p class="fw-bolder text-justify">
+
+                    2 from Grocery Retail (Dairy Farm, PARKnSHOP), 2 from Fast-Food Chains (Maxim’s Caterers, Café de
+                    Coral),
+                    2 from Aviation (Cathay Pacific, HONG KONG AIRCRAFT ENGINEERING), 1 from Public Transport (KMB), 1
+                    from Telecommunications (HKT Services), 1 from
+                    Construction (GAMMON), and 1 from Theme Park (HONGKONG INTERNATIONAL THEME PARKS Limited, the owner
+                    of
+                    Hong Kong Disneyland)
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Contact section-->
+
+    <section class="bg-primary" id="controversies">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="text-justify">
+                    <h2>Controversies of the Employment Support Scheme</h2>
+                    <p class="fw-bolder text-justify">The Hong Kong Employment Support Scheme (ESS) has faced
+                        criticism from some quarters, particularly from smaller businesses who felt that the scheme
+                        was biased towards larger companies. For instance, there were over 150,000 employers included in
+                        the scheme but the top 10 conglomerates already received over 5% of the total subsidies.
+                        Although the government has repeatedly denied this, there was a sense that the distribution of
+                        the subsidy undermined the government's efforts to provide equal support to all businesses
+                        affected by the pandemic. </p>
+
+                    <p class="fw-bolder text-justify">
+                        Additionally, there were concerns that the scheme did not offer enough transparency in terms of
+                        how the subsidies were allocated and whether they were going to the businesses that needed them
+                        the most.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        Activist investor David Webb said the handout scheme was “misconceived” and ended up being
+                        government “largesse” to corporations. “It would only be fair to compensate businesses ordered
+                        to shut down by the government,” he argued.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        Among the top recipients, billions went to businesses that were unaffected or even performed
+                        better during the pandemic, such as supermarkets and telecommunication companies. On the other
+                        hand, companies like Cathay Pacific were forced to cut thousands of jobs to survive. Resources
+                        could have been allocated more efficiently to the industries that were severely impacted by
+                        Covid.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/cathaypacific.jpg" class="img-fluid" alt="Responsive image" width="500"
+                                height="400">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/cathay_dragon.png" class="img-fluid" alt="Responsive image" width="500"
+                                height="400">
+                        </div>
+                        <p class="text-justify">
+                            Cathay Pacific slashed over 8500 jobs after receiving the first phase subsidies of ESS.
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                            Cathay Dragon brand was ceased as part of a major restructuring.
+                        </p>
+
+                    </div>
+
+
+
+                    <p class="fw-bolder text-justify">
+                        Another criticism of the ESS was that it did not do enough to support certain groups of
+                        employees, such as freelancers and those in the gig economy, whose incomes were seriously
+                        hindered by the pandemic but were not covered by the scheme. Some argued that the government
+                        should have provided support to these individuals through alternative means, such as targeted
+                        financial assistance or job training programs.
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <img src="assets/freelance.jpg" class="img-fluid" alt="Responsive image" width="500"
+                                height="400">
+                            <p calss="text-center">
+                                Freelancers are not protected under the ESS.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="fw-bolder text-justify">
+                        Meanwhile, 215,000 self-employed people were each eligible for a one-off handout of HK$7,500
+                        from the scheme, the government said in 2020. However, only about 57% of them ultimately
+                        received the one-off ESS subsidy.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        Another related issue was the temporary nature of the support provided by the ESS. The subsidies
+                        only provided short-term relief and did not address the longer-term challenges faced by
+                        businesses in the post-pandemic economic landscape. A more comprehensive and sustainable
+                        approach was called to support businesses and employees as they navigate the ongoing challenges
+                        and uncertainties brought about by the pandemic.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        Including the self-employed subsidies, the ESS disbursed HK$91.4 billion in total. The sum was
+                        HK$10.4 billion, or about 12.8 %, more than the HK$81 billion earmarked when the scheme was
+                        first announced.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        Overall, the ESS was a bold attempt to support businesses during an unprecedented crisis. Over
+                        1.9 million employee headcounts were secured by the scheme during the specified period,
+                        exceeding the estimates by about 440,000.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        In 2022, the HKSAR government announced a new round of the Employment Support Scheme (ESS) amid
+                        the fifth wave of COVID-19 and some refinements were made to address the above criticisms.
+                    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+            <br>
+            <div class="row gx-4 justify-content-center">
+                <div class="text-justify">
+                    <div class="col-lg-12">
+                        <h2>Key Difference between 2022 ESS and 2020 ESS</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <img src="assets/ess_2022.jpg" class="img-fluid" alt="Responsive image" width="500"
+                                    height="400">
+                            </div>
+                        </div>
+                        <p class="fw-bolder text-justify">
+                            After receiving feedback from various stakeholders, the Hong Kong government has made
+                            certain adjustments to the 2002 Employment Support Scheme (ESS) to provide wage subsidies
+                            to employers for three months (i.e. May, June and July 2022).
+                        </p>
+                        <p class="fw-bolder text-justify">
+                            The key proposed changes are:
+                        </p>
+                        <ul>
+                            <li class="fw-bolder text-justify">
+                                Employers can now apply for wage subsidies for higher-paid employees
+                                as the salary cap of HK$30,000 has been removed;
+                            </li>
+
+                            <br>
+
+                            <li class="fw-bolder text-justify">
+                                The Hong Kong government has placed employers in less severely impacted sectors due to
+                                the fifth wave of COVID-19 on the "Restricted List" rather than the "Exclusion List".
+                                While employers on the "Restricted List" can still qualify for the wage subsidy, they
+                                are limited to a maximum of 100 subsidised employees;
+                            </li>
+
+                            <br>
+
+                            <li class="fw-bolder text-justify">
+                                Employers, with the exception of those on the "Restricted List," have the ability to
+                                apply for the wage subsidy for a maximum of 1,000 employees.
+
+                            </li>
+
+                            <br>
+
+                            <li class="fw-bolder text-justify">
+                                Under the scheme, employees with a monthly income of at least HK$8,000 are entitled to
+                                receive a fixed amount of HK$8,000 per month, while those with a monthly income of at
+                                least HK$3,000 but less than HK$8,000 can receive a fixed amount of HK$4,000 per month.
+                            </li>
+
+                        </ul>
+
+                        <p class="fw-bolder text-justify">
+                            The adjusted ESS intended to address the public concern and targeted SMEs suffering from the
+                            pandemic.
+                            The number of employees benefiting from the 2022 ESS was estimated to be around 1.74
+                            million, costing the government
+                            as much as HK$43 billion.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="contact">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-12">
+                    <h2>Analytics of Hong Kong Post-Pandemic Employment Market</h2>
+                    <br>
+
+                    <div class="row justify-content-left">
+                        <div class="col-md-6">
+                            <img src="assets/C-GHS-003-A.svg" class="img-fluid" alt="Responsive image" width="690"
+                                height="1000">
+                            <p calss="text-center">
+                                The unemployment rate peaked at 6.8% in 2021Q1 and gradually reduced to 3.7% in 2022Q4,
+                                which is
+                                still higher than the pre-pandemic level. <br>Source: Census Department
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/C-GHS-004-B.svg" class="img-fluid" alt="Responsive image" width="700"
+                                height="1000">
+
+                            <p calss="text-center">
+                                <br>
+                                Underemployment Rate peaked at 3.9% in 2021Q3 and gradually reduced to 1.6% in 2022Q4,
+                                showing
+                                the improvement of the sufficient working hour for labour. <br>Source: Census Department
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-left">
+
+
+                        <div class="col-md-6">
+                            <iframe
+                                src="https://data.worldbank.org/share/widget?end=2021&indicators=NY.GDP.MKTP.KD.ZG&locations=HK-SG&start=2011&view=chart"
+                                width='600' height='500' frameBorder='0' scrolling="no"></iframe>
+                            <p class="fw-bolder text-justify">
+                                Singapore is one of the key competitors for talent in the APAC region.
+                                In terms of GDP growth, Hong Kong and Singapore have almost identical movements as both
+                                are internationally-oriented economies. In the last decade, Singapore's economy has generally grown faster
+                                than Hong Kong's.
+                            </p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <iframe
+                                src="https://data.worldbank.org/share/widget?end=2021&indicators=NY.GDP.MKTP.CD&locations=HK-SG&start=2011&view=chart"
+                                width='600' height='500' frameBorder='0' scrolling="no"></iframe>
+                            <p class="fw-bolder text-justify">
+                            In terms of the GDP scale, the gap between Hong Kong and Singapore has widened in 2021 as Singapre's economy
+                            rebounded from the pandemic, while Hong Kong still maintain strict covid control measures at the time. 
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
+                    <br>
+
+
+                    <p class="fw-bolder text-justify">
+                        In the post-pandemic period, Hong Kong is facing a range of employment-related issues, including
+                        the challenge of retaining talent. There are also concerns about a manpower shortage and the
+                        city's ability to cope with increased pressure on tourism and other services. Work-life balance
+                        and remote working arrangements are also emerging as important issues. Compounding these
+                        challenges is an ongoing debate about Hong Kong's prospects as a global metropolis compared to
+                        other competitors.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        Singapore has been stepping up its efforts to attract top talents in recent years, while
+                        Hong Kong has faced challenges related to its political climate and travel restrictions during
+                        the COVID-19 pandemic. This has resulted in Singapore gaining an edge in areas such as
+                        ESG hiring and fintech talent.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        One of the key issues is that Hong Kong is experiencing a significant loss of workforce,
+                        exacerbated by the COVID-19 pandemic and other factors. In 2022, Hong Kong recorded a 2.4%
+                        decrease in the labour force, which is the biggest drop in history. Since 2018, the total labour
+                        force reduces by more than 5.51% from 3.99 million to 3.77 million.
+                        According to government documents,
+                        around 116,600 young Hong Kongers aged 18 to 39 left the workforce in the past two years. There is 
+                        concern that the city failed to retain its young talent.
+                    </p>
+
+                    <div id="chartdiv4">
+                        <h3 class="fw-bolder text-center">Total Number of HK Labour Force by Age Group (in 000s)</h3>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <p class="fw-bolder text-justify">
+                        According to the census department documents, the number of labour age 15-29 reduced the most significantly from 654k in 2020 to
+                        563.2k in 2022. In contrast, labour age 60 or above increased from 446.7k in 2020 to 499.5k in 2022.
+                    </p>
+
+                    <p class="fw-bolder text-justify">
+                        There are ongoing efforts to reverse this trend,
+                        including the Technology Talent Admission Scheme , which allows non-local technology professionals
+                        to work in Hong Kong, and the Global Talent Visa program, which offers permanent residency for
+                        highly skilled and talented individuals. Along with these efforts, there have been calls for the
+                        government to invest in education and technology to develop local talent and address the skills
+                        gap. However, this issue is unlikely to be solved in the short term as the downward trend of
+                        labour
+                        is expected to continue in the next few years.
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4">
+            <p class="m-0 text-center text-white"> &copy; Andy Cheung 2023</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
